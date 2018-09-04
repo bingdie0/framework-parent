@@ -54,6 +54,7 @@
         <httpclient.version>4.5.3</httpclient.version>
         <quartzScheduler.version>2.3.0</quartzScheduler.version>
         <feign-jackson.version>8.9.2</feign-jackson.version>
+        <spring-boot-starter-redis.version>1.4.7.RELEASE</spring-boot-starter-redis.version>
     </properties>
 
     <repositories>
@@ -276,6 +277,11 @@
                 <groupId>org.quartz-scheduler</groupId>
                 <artifactId>quartz</artifactId>
                 <version>${quartzScheduler.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${spring.boot.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
