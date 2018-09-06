@@ -55,6 +55,8 @@
         <quartzScheduler.version>2.3.0</quartzScheduler.version>
         <feign-jackson.version>8.9.2</feign-jackson.version>
         <spring-boot-starter-redis.version>1.4.7.RELEASE</spring-boot-starter-redis.version>
+        <comnmons-collections4.version>4.2</comnmons-collections4.version>
+        <mybatis.version>1.3.2</mybatis.version>
     </properties>
 
     <repositories>
@@ -129,6 +131,16 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -282,6 +294,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
                 <version>${spring.boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${comnmons-collections4.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
