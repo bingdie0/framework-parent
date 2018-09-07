@@ -21,8 +21,9 @@
         <spring.boot.version>2.0.1.RELEASE</spring.boot.version>
         <spring.cloud.version>Finchley.SR1</spring.cloud.version>
         <jdk.version>1.8</jdk.version>
-        <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <maven-resources-plugin.version>3.0.1</maven-resources-plugin.version>
+        <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -331,7 +332,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.0.2</version>
+                <version>${maven-jar-plugin.version}</version>
                 <configuration>
                     <excludes>
                         <exclude>**/*.properties</exclude>
